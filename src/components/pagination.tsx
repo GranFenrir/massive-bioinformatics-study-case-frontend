@@ -26,6 +26,7 @@ const Pagination: React.FC<PaginationProps> = ({ pageCount, onPageChange }) => {
           previousClassName={'mx-1 px-3 py-2 border rounded-lg hover:bg-gray-200'}
           nextClassName={'mx-1 px-3 py-2 border rounded-lg hover:bg-gray-200'}
           disabledClassName={'opacity-50 cursor-not-allowed'}
+          onPageChange={onPageChange}
 
     />
   );

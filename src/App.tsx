@@ -56,6 +56,7 @@ function App() {
 
   const handleCharacterClick = (character: Character) => {
     setSelectedCharacter(character);
+    console.log(character);
   };
 
   const handleCloseDetails = () => {
@@ -63,13 +64,13 @@ function App() {
   };
   const handlePageChange = (selectedItem: { selected: number }) => {
     setCurrentPage(selectedItem.selected);
+    console.log(selectedItem.selected);
 };
 
 
 
   const offset = currentPage * itemsPerPage;
-  const currentPageData = filteredCharacters.slice(offset, offset + itemsPerPage);
-  const pageCount = Math.ceil(filteredCharacters.length / itemsPerPage);
+  const currentPageData = filteredCharacters.slice(offset, offset + itemsPerPage);  const pageCount = Math.ceil(filteredCharacters.length / itemsPerPage);
 
   
 
